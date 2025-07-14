@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recon Report</title>
+    <style>
+        body { font-family: Arial; background: #f9f9f9; padding: 20px; }
+        h1 { color: #2c3e50; }
+        .section { margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+    <h1>Recon Report for {{ target }}</h1>
+
+    <div class="section">
+        <h2>CMS Detected</h2>
+        <p>{{ cms.name }}</p>
+    </div>
+
+    <div class="section">
+        <h2>Usernames</h2>
+        <ul>
+            {% for user in users %}
+            <li>{{ user }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Login Pages</h2>
+        <ul>
+            {% for login in logins %}
+            <li><a href="{{ login }}">{{ login }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
