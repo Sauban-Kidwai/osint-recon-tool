@@ -84,7 +84,7 @@ python3 main.py https://example.com -v
 
 ```bash
 ┌──(kali㉿kali)-[~/Desktop/osint_tool]
-└─$ python3 main.py https://hacksmarter-manufacturing.shop -v
+└─$ python3 main.py https://domain.com -v
 [+] Target URL: https://domain.com
 [+] Output Directory: output
 [*] Starting CMS detection...
