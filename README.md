@@ -80,6 +80,22 @@ python3 main.py https://example.com -v
 
 ---
 
+## Example terminal output
+
+```bash
+┌──(kali㉿kali)-[~/Desktop/osint_tool]
+└─$ python3 main.py https://hacksmarter-manufacturing.shop -v
+[+] Target URL: https://domain.com
+[+] Output Directory: output
+[*] Starting CMS detection...
+[+] CMS Detected: cms version x.xx
+[+] Usernames Found: ['User1', 'User2',]
+[+] Usernames written to: output/usernames.txt
+[+] Login Portals Found: ['URL1', 'URL2']
+[*] Generating HTML report...
+[+] Report saved to: output/report.html
+```
+
 ## 🌐 Supported CMS-Specific Features
 
 | CMS        | CMS Detection | User Enumeration | Login Paths Detected      |
